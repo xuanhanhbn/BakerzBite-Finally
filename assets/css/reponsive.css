@@ -1,0 +1,250 @@
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+@media(max-width:1050px){
+	.s-box-container{
+		flex-wrap: wrap;
+
+	}
+	.services{
+		height: auto;
+	}
+	.s-heading{
+		margin: 15px;
+	}
+	.s-box{
+		flex-grow: 1;
+	}
+
+}
+
+@media(min-width:992px) {
+
+    .product-list { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 575px) {
+    .product-list { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1200px) {
+    .product-list { grid-template-columns: repeat(4, 1fr); }
+
+}
+
+@media (min-width:1190px) and (max-width:1400px) {
+    .discription-shopping-container {
+        left: -280%;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1022px) {
+    .discription-shopping-container {
+        left: 10%;
+    }
+}
+
+@media (max-width: 940px) {
+    .discription-shopping-container {
+        left: -50%;
+    }
+}
+
+@media (max-width: 770px) {
+    .discription-shopping-container {
+        left: -50%;
+        z-index: 5000;
+    }
+}
+
+@media (max-width: 600px) {
+    .discription-shopping-container {
+        left: -10%;
+        z-index: 5000;
+    }
+}
+
+
+@media only screen and (max-width:1023px) {
+    .main-menu .nav-items {
+        display: none;
+    }
+
+    .menu-icons .shopping-none {
+        display: none;
+    }
+    .menu-icons {
+        padding: 0 30px;
+    }
+    .menu-tr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-item i {
+        font-size: 22px;
+    }
+
+    .menu-item .menu-icons .fa-bars {
+        display: block;
+    }
+}
+
+
+@media (min-width: 1023px) {
+    .menu-icons .shopping-none2 {
+        display: none;
+    }
+}
+
+/* about */
+@media screen and (max-width:740px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+
+    .swiper-navBtn {
+        display: none !important;
+    }
+}
+
+/* tablet 740px - 1023px*/
+@media only screen and (min-width:740px) and (max-width:1023px) {
+
+    .feedback-heading,
+    .history-heading,
+    .team-heading,
+    .why-choose-us-heading,
+    .header-heading {
+        font-size: 40px;
+    }
+}
+/* pc 1024px*/
+@media only screen and (min-width: 1200px) {
+    .header-menu {
+        display: none;
+    }
+}
+
+/* mobie 739px*/
+@media only screen and (max-width: 739px) {
+    .numer-count {
+        width: 100%;
+    }
+
+    .number-auto {
+        font-size: 60px;
+    }
+
+    .container-number-count .plus {
+        font-size: 40px;
+    }
+
+    .feedback-heading,
+    .history-heading,
+    .team-heading,
+    .why-choose-us-heading,
+    .header-heading {
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 1109px) and (max-width: 1390px )  {
+    .menu-icons {
+        padding: 0px 3px;
+        right: 80px;
+    }
+    .discription-shopping-container {
+        right: -80px;
+        left: -150px;
+    }
+}
+
+@media only screen and (min-width:1023px) and (max-width:1110px) {
+    .history-heading {
+        width: 20%;
+    }
+
+    .number {
+        width: 80%;
+        padding-left: 30px;
+    }
+
+}
+
+@media only screen and (min-width:739px) and (max-width:810px) {
+    .numer-count {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media only screen and (max-width: 767px) and (min-width: 584px) {
+    .repon_nav-left{
+        padding: 0 90px ;
+    }
+    .repon_nav-right {
+        padding: 0 20px;
+    }
+}
+@media only screen and (min-width: 520px) and (max-width: 583px) {
+    .repon_nav-left{
+        padding: 0 80px;
+    }
+    .repon_nav-right {
+        padding: 0 20px;
+    }
+}
+@media only screen and (max-width: 519px)  {
+    .repon_nav-left{
+        padding: 0 20px;
+    }
+    .repon_nav-right {
+        padding: 0;
+    }
+}
+
+
+@media only screen and (max-width:1023px) and (min-width: 768px) {
+    .header-nav {
+        display: none;
+    }
+    .menu-icons{
+        padding: 0;
+    }
+    .why-choose-us {
+        display: block;
+        width: 100%;
+    }
+    .repon_nav-left {
+        padding: 0 200px 0 60px;
+    }
+    .repon_nav-right {
+        padding: 0 30px 0 200px;
+    }
+    .why-choose-us-map {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .history-heading {
+        display: block;
+        width: 100%;
+    }
+
+    .number {
+        display: block;
+        width: 100%;
+        padding-left: -110px;
+    }
+
+}

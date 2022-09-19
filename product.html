@@ -1,0 +1,357 @@
+
+    <div class="main-container">
+        <section class="page-header">
+            <div class="page-header-color">
+                <div class="page-container">
+                    <div class="page-content">
+                        <div class="container">
+                            <h1 class="page-heading">
+                                Product
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="Shop_Product">
+            <div class="container">
+                <div class="row">
+                    <div class="P_list_left col-md-3">
+                        <div class="Pie_list_left">
+                            <h2 style="font-weight: bold">Product Categories</h2>
+                            <ul class="categories_list">
+                                <li><button class="all_list product_type_btn" data-cake-type="All">SHOW ALL</button></li>
+                                <li><button class="breads_show_list" >BREADS</button>
+                                    <ul class="breads_list">
+                                        <li><button class="product_type_btn" data-cake-type="White bread"> White breads</button></li>
+                                        <li><button class="product_type_btn" data-cake-type="wheat bread"> Wheat breads</button></li>
+                                        <li><button class="product_type_btn" data-cake-type="Croissant"> Croissants</button></li>
+                                        <li><button class="product_type_btn" data-cake-type="Breadstick"> Breadsticks</button></li>
+                                        <li><button class="product_type_btn" data-cake-type="Bun"> Buns</button></li>
+                                    </ul>
+                                </li>
+                                <li><button class="patries_show_list" >PATRIES</button>
+                                    <ul class="patries_list">
+                                        <li><button class="product_type_btn" data-cake-type="Pie"> Pies</button></li>
+                                        <li><button class="product_type_btn" data-cake-type="Danishes"> Danishes</button></li>
+                                        <li><button class="product_type_btn" data-cake-type="Macarons"> Macarons</button></li>
+                                        <li><button class="product_type_btn" data-cake-type="Tart"> Tarts</button></li>
+                                        <li><button class="product_type_btn" data-cake-type="Profiterole"> Profiteroles</button></li>
+                                    </ul>
+                                </li>
+                                <li><button class="cookies_show_list" >COOKIES</button>
+                                    <ul class="cookies_list">
+                                        <li><button class="product_type_btn" data-cake-type="Snickerdoodles"> Snickerdoodles</button></li>
+                                        <li><button class="product_type_btn" data-cake-type="Chocolate Chip Cookies"> Chocolate Chip Cookies</button></li>
+                                        <li><button class="product_type_btn" data-cake-type="Shortbread Cookies"> Shortbread Cookies</button></li>
+                                        <li><button class="product_type_btn" data-cake-type="Whoopie Pies"> Whoopie Pies</button></li>
+                                    </ul>
+                                </li>
+                                <li><button class="cupcakes_show_list product_type_btn" data-cake-type="Cupcake">CUPCAKES</button>
+                                </li>
+                                <li><button class="coffee_show_list product_type_btn">COFFEE</button>
+                                </li>
+                                <li><button class="merchandise_show_list product_type_btn" data-cake-type="Merchandise">MERCHANDISE</button></li>
+                            </ul>
+                        </div>
+                        <div class="P_tags">
+                            <h2 style="font-weight: bold">Products Tags</h2>
+                            <ul class="tag_list">
+                                <li><button class="product_tag_btn" data-cake-tag="New">New</button></li>
+                                <li><button class="product_tag_btn" data-cake-tag="Hot">Hot</button></li>
+                                <li><button class="product_tag_btn" data-cake-tag="On Sale">On Sale</button></li>
+                                <li><button class="product_tag_btn" data-cake-tag="Best Seller">Best Seller</button></li>
+                            </ul>
+                        </div>
+                        <div class="Sale_Product_Img">
+                            <img class="Sale_Img" src="assets/imgs/products/Pie-sale1.jpg" alt="Sales">
+                        </div>
+                    </div>
+                    <div class="P_list_right col-md-9">
+                        <div class="P_list_img_container" style="height: 1350px">
+                            <div class="search_and_sort_P">
+                                <div class="P_list_Search col-9">
+                                    <input class="search_input" type="text" placeholder="Search.." style="border: 1px solid; padding: 8px; border-radius: 4px">
+                                    <button class="search_btn" type="submit" style="display: initial"><i class="fa fa-search"></i></button>
+                                </div>
+                                <div class="P_dropdown_list col-3">
+                                    <label for="products">Sorting By:</label>
+                                    <select name="products" id="products">
+                                        <option value="price">Price</option>
+                                        <option value="quality">Quality</option>
+                                        <option value="new">New</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="P_Img_list">
+                                <div class="row">
+                                    <div class="P_Img col-4 item_template">
+                                        <div class="P_Img_container" tabindex="0">
+                                            <img class="card-img" src="" alt="pie picture">
+                                            <div class="card-badges"></div>
+                                            <ul class="card-action-list">
+                                                <li class="card-action-item">
+                                                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                                                        <ion-icon name = "cart-outline"></ion-icon>
+                                                    </button>
+
+                                                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                                                </li>
+
+                                                <li class="card-action-item">
+                                                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                                                        <ion-icon name = "heart-outline"></ion-icon>
+                                                    </button>
+
+                                                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                                                </li>
+
+                                                <li class="card-action-item">
+                                                    <div class="card-quick-view">
+                                                        <button class="card-action-btn" aria-labelledby="card-label-3" data-toggle="modal" data-target="">
+                                                            <ion-icon name = "eye-outline"></ion-icon>
+                                                        </button>
+
+                                                        <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="card-action-item">
+                                                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                                                        <ion-icon name = "repeat-outline"></ion-icon>
+                                                    </button>
+
+                                                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="P_Img-type"></p>
+                                        <p class="P_Img-name"></p>
+                                        <p class="P_Img-price"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                             <!-- Modal -->
+                            <div class="modal fade bd-example-modal-lg product-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal__quick-view">
+                                            <div class="modal__overlay"></div>
+                                            <div class="modal__body">
+                                                <div class="modal__container">
+                                                    <div class="modal__main">
+                                                        <div class="modal__button-close close-modal" data-dismiss="modal" aria-label="Close">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                        </div>
+                                                        <img src = "./assets/imgs/products/product-1.jpeg" class="img-feature product1">
+                                                    </div>
+                                                    <div class="list-img product1">
+                                                        <div><img src = "./assets/imgs/products/product-11.jpeg" alt=""></div>
+                                                        <div><img src="./assets/imgs/products/product-2.jpeg" alt=""></div>
+                                                        <div><img src = "./assets/imgs/products/product-3.jpeg" alt=""></div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal__text">
+                                                    <p class="type">Bread</p>
+                                                    <h1 class="modal_heading">SOURDOUGH</h1>
+                                                    <div class="rating__modal">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span>(5)</span>
+                                                    </div>
+                                                    <p class="modal_price">
+                                                        <span>$5.00</span>
+                                                    </p>
+                                                    <p class="modal__des">
+                                                        <span>Sourdough can be defined as an intermediate product containing a flour/water mixture
+                                                            that has been fermented by a combination of bacteria, usually heterofermentative strains
+                                                            of lactic acid bacteria and yeast (DeVuyst and Neysens, 2005), resulting in an end product
+                                                            with a sour taste.</span> <br/>
+                                                            <span><br/></span>
+                                                    </p>
+                                                    <div class="modal__sperate"></div>
+                                                    <div class="modal__ingredients">
+                                                        <h2 class="modal_heading ingredients">INGREDIENTS</h2>
+                                                        <ul>
+                                                            <li> - 1/2 teaspoons instant yeast</li>
+                                                            <li> - 1/2 teaspoons (9g) salt</li>
+                                                            <li> - 1/2 teaspoons granulated sugar</li>
+                                                            <li> - 1/2 cups (300g) King Arthur Unbleached All-Purpose Flour</li>
+                                                            <li> - 2 cups (454g) ripe (fed) sourdough starter</li>
+                                                            <li> - 1/2 cup (113g) water, lukewarm</li>
+                                                        </ul>
+                                                    </div>
+                                                    <form action="">
+                                                        <div class="qty_container">
+                                                            <div class="quantity">
+                                                                <div class="quantity">
+                                                                    <div class="pro-qtyss">
+                                                                        <input type="text" value="1" id="">
+                                                                    </div>
+                                                                    <a href="#" class="primary-btn pad-cart">Add to Cart</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade bd-example-modal-lg product-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal__quick-view">
+                                            <div class="modal__overlay"></div>
+                                            <div class="modal__body">
+                                                <div class="modal__container">
+                                                    <div class="modal__main">
+                                                        <div class="modal__button-close close-modal" data-dismiss="modal" aria-label="Close">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                        </div>
+                                                        <img src = "./assets/imgs/products/product-2.jpeg" class="img-feature product2">
+                                                    </div>
+                                                    <div class="list-img product2">
+                                                        <div><img src = "./assets/imgs/products/product-5.jpeg" alt=""></div>
+                                                        <div><img src="./assets/imgs/products/product-6.jpeg" alt=""></div>
+                                                        <div><img src = "./assets/imgs/products/product-7.jpeg" alt=""></div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal__text">
+                                                    <p class="type">Bread</p>
+                                                    <h1 class="modal_heading">MAPLE OAT MUFFIN</h1>
+                                                    <div class="rating__modal">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span>(5)</span>
+                                                    </div>
+                                                    <p class="modal_price">
+                                                        <span>$5.00</span>
+                                                    </p>
+                                                    <p class="modal__des">
+                                                        <span>Oatmeal muffins don't sound super exciting. But these are no ordinary oatmeal muffins. These are
+                                                            maple brown sugar oatmeal muffins. And they are awesome! The muffins are sweet and are just hearty
+                                                            enough to be filling without being heavy. They make a great on-the-go breakfast, and I even like them for an easy dessert.</span> <br/>
+                                                            <span><br/></span>
+                                                    </p>
+                                                    <div class="modal__sperate"></div>
+                                                    <div class="modal__ingredients">
+                                                        <h2 class="modal_heading ingredients">INGREDIENTS</h2>
+                                                        <ul>
+                                                            <li> - 1 cup quick-cooking or regular rolled oats</li>
+                                                            <li> - 1/2 cup milk</li>
+                                                            <li> - 1 cup all-purpose flour</li>
+                                                            <li> - 2 teaspoons baking powder</li>
+                                                            <li> - 1/4 teaspoon salt</li>
+                                                            <li> - 1/4 teaspoon ground cinnamon</li>
+                                                            <li> - 3/4 cup pure maple syrup</li>
+                                                        </ul>
+                                                    </div>
+                                                    <form action="">
+                                                        <div class="qty_container">
+                                                            <div class="quantity">
+                                                                <div class="quantity">
+                                                                    <div class="pro-qtyss">
+                                                                        <input type="text" value="1" id="">
+                                                                    </div>
+                                                                    <a href="#" class="primary-btn pad-cart">Add to Cart</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade bd-example-modal-lg product-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal__quick-view">
+                                            <div class="modal__overlay"></div>
+                                            <div class="modal__body">
+                                                <div class="modal__container">
+                                                    <div class="modal__main">
+                                                        <div class="modal__button-close close-modal" data-dismiss="modal" aria-label="Close">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                        </div>
+                                                        <img src = "./assets/imgs/products/product-3.jpeg" class="img-feature product3">
+                                                    </div>
+                                                    <div class="list-img product3">
+                                                        <div><img src = "./assets/imgs/products/product-8.jpeg" alt=""></div>
+                                                        <div><img src="/assets/imgs/products/product-9.jpeg" alt=""></div>
+                                                        <div><img src = "/assets/imgs/products/product-10.jpeg" alt=""></div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal__text">
+                                                    <p class="type">Bread</p>
+                                                    <h1 class="modal_heading">CROISSANT</h1>
+                                                    <div class="rating__modal">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span>(5)</span>
+                                                    </div>
+                                                    <p class="modal_price">
+                                                        <span>$5.00</span>
+                                                    </p>
+                                                    <p class="modal__des">
+                                                        <span>A croissant is a laminated, yeast-leavened bakery product that contains dough/roll-in fat layers to create a flaky, crispy texture.
+                                                            Croissants belong to the Viennoiserie or pastry category of baked goods along with brioche, Danish and puff pastries.
+                                                            A croissant usually contains normal levels of salt, yeast and sugar.</span> <br/>
+                                                            <span><br/></span>
+                                                    </p>
+                                                    <div class="modal__sperate"></div>
+                                                    <div class="modal__ingredients">
+                                                        <h2 class="modal_heading ingredients">INGREDIENTS</h2>
+                                                        <ul>
+                                                            <li> - 500g strong white flour, plus extra for dusting</li>
+                                                            <li> - 3/2 tsp salt</li>
+                                                            <li> - 50g sugar</li>
+                                                            <li> - 2 x 7g sachets fast-action dried yeast</li>
+                                                            <li> - oil, for greasing</li>
+                                                            <li> - 300g butter, at room temperature</li>
+                                                            <li> - 1 egg, beaten</li>
+                                                        </ul>
+                                                    </div>
+                                                    <form action="">
+                                                        <div class="qty_container">
+                                                            <div class="quantity">
+                                                                <div class="quantity">
+                                                                    <div class="pro-qtyss">
+                                                                        <input type="text" value="1" id="">
+                                                                    </div>
+                                                                    <a href="#" class="primary-btn pad-cart">Add to Cart</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="P_list_pagination" style="height: 90px; margin-bottom: 40px;">
+                            <span class="fa-solid fa-circle-arrow-left P_list_previous"></span>
+                            <span class="P_list_currentPageNumber">1</span>
+                            <span class="fa-solid fa-circle-arrow-right P_list_next"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

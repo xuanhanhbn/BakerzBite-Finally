@@ -1,0 +1,119 @@
+
+<div class="main-container">
+    <!-- Start Page Header -->
+    <section class="page-header">
+        <div class="page-header-color">
+            <div class="page-container">
+                <div class="page-content">
+                    <div class="container">
+                        <h1 class="page-heading">
+                            Cart
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Page Header -->
+
+    <!-- Start Form -->
+    <div class="form__cart-section">
+            <div class="container" > <!-- style="margin: 0 115px; padding: 0 15px;" -->
+            <div class="row">
+                <div class="form-content col-xs-12">
+                    <div class="form-container">
+                        <form action="#" class="cart-form">
+                            <table class="cart-table shop-table">
+                                <thead>
+                                    <tr>
+                                        <th class="cart-remove text-left "></th>
+                                        <th class="cart-thumbnail text-left "></th>
+                                        <th class="cart-product text-left ">Product</th>
+                                        <th class="cart-price text-left ">Price</th>
+                                        <th class="cart-qty text-left ">Quantity</th>
+                                        <th class="cart-total text-left">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="cart-item">
+                                        <td class="cart-remove text-left"><a href="#" class="remove">x</a></td>
+                                        <td class="cart-thumbnail text-left">
+                                            <a href="#">
+                                                <img src="./assets/imgs/products/product-1.jpeg" alt="thumbnail">
+                                            </a>
+                                        </td>
+                                        <td class="cart-product text-left">
+                                            <a href="#">Sourdough</a>
+                                        </td>
+                                        <td class="cart-price text-left">
+                                            <span class="price">$5.00</span>
+                                        </td>
+                                        <td class="cart-qty text-left">
+                                            <div class="qty_container">
+                                                <div class="quantity" style="margin: 0;">
+                                                    <div class="pro-qtys">
+                                                        <input type="text" value="1" id="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="cart-total text-left">
+                                            <span class="total">$5.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6" class="action">
+                                            <div class="coupon">
+                                                <label for="coupon_code">Coupon: </label>
+                                                <input type="text" name="coupn_code" class="input-text"  id="coupon_code" value placeholder="Coupon code">
+                                                <input type="submit" value="Apply coupon" class="button">
+
+                                            </div>
+                                            <input type="submit" value="Update cart" class="button-update" disabled>
+                                            <input type="hidden" name="_nonce" id="_nonce">
+                                            <input type="hidden" name="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                            <div class="cart-collaterals">
+                            <div class="cart-totals">
+                                <h2 class="cart-total-heading">CART TOTALS</h2>
+                                <table cellspacing="0" class="cart-table shop-table" style="width: 100%; margin: 0;">
+                                    <tbody>
+                                        <tr class="cart-subtotal">
+                                            <th class="subtotal">Subtotal</th>
+                                            <td class="subtotal" data-title="Subtotal">
+                                                <span class="price-amount amount">
+                                                    $5.00
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr class="order-total">
+                                            <th class="total">Total</th>
+                                            <td class="total" data-title = "Total">
+                                                <strong>
+                                                    <span class="price-amout amout">
+                                                        $5.00
+                                                    </span>
+                                                </strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="check-out">
+                                <a href="#!checkout" class="checkout-btn">
+                                    <button type="submit">Proceed to check out</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Form -->
+</div>

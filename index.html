@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "myApp" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Link Css -->
+
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <!-- <link rel="stylesheet" href="./assets/css/head.css"> -->
+    <link rel="stylesheet" href="./assets/css/faq.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/checkout.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+
+</head>
+<SCRIPT>
+
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth()+6)
+    jcount = eval(cookieVal("jaafarCounter"))
+    jcount++
+    document.cookie = "jaafarCounter="+jcount+";expires=" + expireDate.toGMTString()
+
+    function cookieVal(cookieName) {
+    thisCookie = document.cookie.split("; ")
+    for (i=0; i<thisCookie.length; i++){
+        if (cookieName == thisCookie[i].split("=")[0]){
+            return thisCookie[i].split("=")[1]
+        }
+    }
+    return 0
+    }
+
+    function page_counter(){
+    for (i=0;i<(4-jcount.toString().length);i++)
+    document.write('<span class="counter">0</span>')
+    for (y=0;y<(jcount.toString().length);y++)
+    document.write('<span class="counter">'+jcount.toString().charAt(y)+'</span>')
+    }
+
+    </SCRIPT>
+<body>
+
+    <div class="main-container">
+        <header class="main-header" >
+            <div class="container">
+                <div class="menu_affix">
+                    <div class="main-menu_container">
+                        <div id = "nav-menu" class="menu-tr">
+                            <nav class=" main-menu vu_d-td">
+                                <ul class="page-color-text menu-list menu-top-left menu-left list-style">
+                                    <li class="menu-item">
+                                        <div class="menu-icons repon_nav-left">
+                                            <a href="#" class="shopping-none2">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                <div class="discription-shopping-container">
+                                                    <div class="discription-shopped">
+                                                        <div class="discription-shopping">
+                                                            <div class="discription-shopping-name">
+                                                                <div class="discription-shopping-name-sub">SOURDOUGH</div>
+                                                                <div class="discription-shopping-quantity">1 x 3.99$</div>
+                                                            </div>
+                                                            <div class="discription-shopping-img"><img src="./assets/imgs/products/product-1.jpeg" alt=""></div>
+                                                        </div>
+
+                                                        <div class="discription-shopping-subotal ">Subotal:
+                                                            <span>$5.84</span>
+                                                        </div>
+                                                        <div class="discription-shopping-btns">
+                                                            <button class="discription-shopping-btn1">
+                                                                <a href="#!cart">VIEW CART</a>
+                                                            </button>
+                                                            <button class="discription-shopping-btn2">CHECK OUT</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-items menu-item">
+                                        <div id="menu-btn" class="menu-icons nav-menu">
+                                            <i class="fa-solid fa-bars"></i>
+                                        </div>
+                                    </li>
+                                    <li class="homie nav-items menu-item header-active">
+                                        <a href="#/!">Home</a>
+                                    </li>
+                                    <li class="nav-items menu-item">
+                                        <a href="#!product">Menu</a>
+                                    </li>
+                                    <li class="nav-items menu-item">
+                                        <a href="#!about">About Us</a>
+                                    </li>
+                                    <li class="logo-container vu_d-td">
+                                        <a href="#/!">
+                                            <img src="./assets/imgs/logo.png" width="100px" height="100px" alt="">
+                                        </a>
+                                        <p>
+                                            <i class="fa-solid fa-eye"> : </i>
+                                            <SCRIPT>page_counter(jcount);</SCRIPT>
+                                        </p>
+                                    </li>
+
+                                    <li class="nav-items menu-item">
+                                        <a href="#!faq">FAQs</a>
+                                    </li>
+                                    <li class="nav-items menu-item">
+                                        <a href="#!contact">Contact</a>
+                                    </li>
+                                    <li class="nav-items menu-item">
+                                        <a href="#/!">Order Now</a>
+                                    </li>
+                                    <li class="menu-item repon_nav-right">
+                                        <div class="menu-icons">
+                                            <a href="#">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item js-menu">
+                                        <div class="menu-icons">
+                                            <a href="#">
+                                                <i class="fa-solid fa-bars"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-icons">
+                                            <a href="#!cart" class="shopping-none">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </a>
+                                                <div class="discription-shopping-container">
+                                                    <div class="discription-shopped">
+                                                        <div class="discription-shopping">
+                                                            <div class="discription-shopping-name">
+                                                                <div class="discription-shopping-name-sub">SOURDOUGH</div>
+                                                                <div class="discription-shopping-quantity">1 x $3.99</div>
+                                                            </div>
+                                                            <div class="discription-shopping-img">
+                                                                <img src="./assets/imgs/products/product-1.jpeg" alt="">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="discription-shopping-subotal ">Subotal:
+                                                            <span>$3.99</span>
+                                                        </div>
+                                                        <div class="discription-shopping-btns">
+                                                            <button class="discription-shopping-btn1">
+                                                                <a href="#!cart">VIEW CART</a>
+                                                            </button>
+                                                            <button class="discription-shopping-btn2">
+                                                                <a href="#!checkout">CHECK OUT</a>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div ng-view></div>
+
+        <!-- End Header -->
+        <!-- Start Footer -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-container">
+                        <div class="footer-top">
+                            <div class="block-footer" style="width: 268px;">
+                               <h4 class="footer-heading">Customer Service</h4>
+                               <p class="hotline">
+                                   <span>Hotline:
+                                        <a href="#">19008199</a>
+                                   </span>
+                               </p>
+                               <a href="#" class="small-text">Help Centre </a>
+                               <a href="#" class="small-text">Bakerz Bite Blog</a>
+                               <a href="#" class="small-text">How To Buy</a>
+                               <a href="#" class="small-text">Paymet</a>
+                               <a href="#!contact" class="small-text">Contac Us</a>
+                               <a href="#" class="small-text">Warranty Policy</a>
+                            </div>
+                            <div class="block-footer">
+                                <h4 class="footer-heading">
+                                    About Barkez Bite
+                                </h4>
+                                    <a href="#!about" class="small-text">About Us</a>
+                                    <a href="#" class="small-text">Privacy Policy</a>
+                                    <a href="#" class="small-text">Media Contact</a>
+                            </div>
+                            <div class="block-footer">
+                                <h4 class="footer-heading">Paymet</h4>
+                                <ul class="paymet-list">
+                                    <li class="paymet-item">
+                                        <div class="footer-background footer-vn-visa-png" style="width: 55px; height: 18px;"></div>
+                                    </li>
+                                    <li class="paymet-item">
+                                        <div class="footer-background footer-vn-mastercard-png" style="width: 55px; height: 29px;" ></div>
+                                    </li>
+                                    <li class="paymet-item">
+                                        <div class="footer-background footer-vn-jcb-png" style="width: 55px; height: 23px;" ></div>
+                                    </li>
+                                    <li class="paymet-item">
+                                        <div class="footer-background footer-vn-amex-png" style="width: 55px; height: 24px;" ></div>
+                                    </li>
+                                    <li class="paymet-item">
+                                        <div class="footer-background footer-vn-vn_cod_footer-png" style="width: 55px; height: 29px;" ></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="block-footer">
+                                <h4 class="footer-heading">Follow us</h4>
+                                <div class="icon-footer-list">
+                                    <a href="#">
+                                        <i class="icon-footer-follow fa-brands fa-facebook"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icon-footer-follow fa-brands fa-youtube"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icon-footer-follow fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="block-footer">
+                                <h4 class="footer-heading">Opening Hours</h4>
+                                <div class="time-open">
+                                    <span>Monday - Firday: 8:00 - 22:00</span><br/>
+                                    <span>Saturday - Sunday: 9:00 - 21:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-separate"></div>
+                        <div class="footer-address">
+                            <span>Address: 8a, Ton That Thuyet Street, Ha Noi, Viet Nam</span><br/>
+                            <span>© 2022 -  Bakerz Bite. All Rights Reserved.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal__quick-view-section">
+            <div class="modal__quick-view">
+                <div class="modal__overlay"></div>
+                <div class="modal__body">
+                    <div class="modal__container">
+                        <div class="modal__main">
+                            <div class="modal__button-close close-modal">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                            <img src = "./assets/imgs/Gallery/gallery-1.jpeg" class="img-feature">
+                        </div>
+                        <div class="list-img">
+                            <div><img src = "./assets/imgs/Gallery/gallery-1.jpeg" alt=""></div>
+                            <div><img src="./assets/imgs/Gallery/gallery-2.jpeg" alt=""></div>
+                            <div><img src = "./assets/imgs/Gallery/gallery-3.jpeg" alt=""></div>
+                        </div>
+                    </div>
+                     <div class="modal__text">
+                        <p class="type">Bread</p>
+                        <h1 class="modal_heading">Sourdough</h1>
+                        <div class="rating__modal">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(5)</span>
+                        </div>
+                        <p class="modal_price">
+                            <span>$5.00</span>
+                        </p>
+                        <p class="modal__des">
+                            <span>Sourdough can be defined as an intermediate product containing a flour/water mixture that has been fermented by a combination of bacteria, usually heterofermentative strains of lactic acid bacteria and yeast (DeVuyst and Neysens, 2005), resulting in an end product with a sour taste..</span> <br/>
+                                <span><br/></span>
+                        </p>
+                        <div class="modal__sperate"></div>
+                        <div class="modal__ingredients">
+                            <h2 class="modal_heading ingredients">INGREDIENTS</h2>
+                            <ul>
+                                <li> - 1 tbsp olive oil</li>
+                                <li> - 1 onion, chopped</li>
+                                <li> - 1 green pepper, deseeded and sliced</li>
+                                <li> - 1 garlic clove, sliced</li>
+                                <li> - ½ tsp crushed chilli flakes</li>
+                            </ul>
+                        </div>
+                        <form action="">
+                            <div class="qty_container">
+                                <div class="quantity">
+                                    <div class="quantity">
+                                        <div class="pro-qty">
+                                            <input type="text" value="1" id="">
+                                        </div>
+                                        <a href="#" class="primary-btn pad-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__quick-view-section1">
+            <div class="modal__quick-view">
+                <div class="modal__overlay"></div>
+                <div class="modal__body">
+                    <div class="modal__container">
+                        <div class="modal__main">
+                            <div class="modal__button-close close-modal">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                            <img src = "./assets/imgs/Gallery/gallery-4.jpeg" class="img-feature1">
+                        </div>
+                        <div class="list-img">
+                            <div><img src = "./assets/imgs/Gallery/gallery-4.jpeg" alt=""></div>
+                            <div><img src="./assets/imgs/Gallery/gallery-5.jpeg" alt=""></div>
+                            <div><img src = "./assets/imgs/Gallery/gallery-6.jpeg" alt=""></div>
+                        </div>
+                    </div>
+                     <div class="modal__text">
+                        <p class="type">Bread</p>
+                        <h1 class="modal_heading">MAPLE OAT MUFFIN</h1>
+                        <div class="rating__modal">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(5)</span>
+                        </div>
+                        <p class="modal_price">
+                            <span>$5.00</span>
+                        </p>
+                        <p class="modal__des">
+                            <span>Oatmeal muffins don't sound super exciting. But these are no ordinary oatmeal muffins. These are
+                                 maple brown sugar oatmeal muffins. And they are awesome! The muffins are sweet and are just hearty
+                                 enough to be filling without being heavy. They make a great on-the-go breakfast, and I even like them for an easy dessert.</span> <br/>
+                                <span><br/></span>
+                        </p>
+                        <div class="modal__sperate"></div>
+                        <div class="modal__ingredients">
+                            <h2 class="modal_heading ingredients">INGREDIENTS</h2>
+                            <ul>
+                                <li> - 1 cup quick-cooking or regular rolled oats</li>
+                                <li> - 1/2 cup milk</li>
+                                <li> - 1 cup all-purpose flour</li>
+                                <li> - 2 teaspoons baking powder</li>
+                                <li> - 1/4 teaspoon salt</li>
+                                <li> - 1/4 teaspoon ground cinnamon</li>
+                                <li> - 3/4 cup pure maple syrup</li>
+                                <li> - 1/4 cup butter, melted</li>
+                                <li> - 1 egg, lightly beaten</li>
+                                <li> - 1/2 cup chopped pecans</li>
+                            </ul>
+                        </div>
+                        <form action="">
+                            <div class="qty_container">
+                                <div class="quantity">
+                                    <div class="quantity">
+                                        <div class="pro-qty">
+                                            <input type="text" value="1" id="">
+                                        </div>
+                                        <a href="#" class="primary-btn pad-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__quick-view-section2">
+            <div class="modal__quick-view">
+                <div class="modal__overlay"></div>
+                <div class="modal__body">
+                    <div class="modal__container">
+                        <div class="modal__main">
+                            <div class="modal__button-close close-modal">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                            <img src = "./assets/imgs/Gallery/gallery-7.jpeg" class="img-feature2">
+                        </div>
+                        <div class="list-img">
+                            <div><img src = "./assets/imgs/Gallery/gallery-7.jpeg" alt=""></div>
+                            <div><img src="./assets/imgs/Gallery/gallery-8.jpeg" alt=""></div>
+                            <div><img src = "./assets/imgs/Gallery/gallery-1.jpeg" alt=""></div>
+                        </div>
+                    </div>
+                     <div class="modal__text">
+                        <p class="type">Bread</p>
+                        <h1 class="modal_heading">CROISSANT</h1>
+                        <div class="rating__modal">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span>(5)</span>
+                        </div>
+                        <p class="modal_price">
+                            <span>$5.00</span>
+                        </p>
+                        <p class="modal__des">
+                            <span>A croissant is a laminated, yeast-leavened bakery product that contains dough/roll-in fat layers to create a flaky, crispy texture.
+                                Croissants belong to the Viennoiserie or pastry category of baked goods along with brioche, Danish and puff pastries.
+                                A croissant usually contains normal levels of salt, yeast and sugar.</span> <br/>
+                                <span><br/></span>
+                        </p>
+                        <div class="modal__sperate"></div>
+                        <div class="modal__ingredients">
+                            <h2 class="modal_heading ingredients">INGREDIENTS</h2>
+                            <ul>
+                                <li> - 500g strong white flour, plus extra for dusting</li>
+                                <li> - 3/2 tsp salt</li>
+                                <li> - 50g sugar</li>
+                                <li> - 2 x 7g sachets fast-action dried yeast</li>
+                                <li> - oil, for greasing</li>
+                                <li> - 300g butter, at room temperature</li>
+                                <li> - 1 egg, beaten</li>
+                            </ul>
+                        </div>
+                        <form action="">
+                            <div class="qty_container">
+                                <div class="quantity">
+                                    <div class="quantity">
+                                        <div class="pro-qty">
+                                            <input type="text" value="1" id="">
+                                        </div>
+                                        <a href="#" class="primary-btn pad-cart">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal1996 js-modal1996">
+            <div class="modal-container1996 js-modal-container1996">
+                <div class="modal-close js-modal-close"><i class="fa-solid fa-xmark"></i></div>
+                <div class="clear"></div>
+                <ul class="modal-nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- ion icon link -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+
+
+
+</body>
+</html>

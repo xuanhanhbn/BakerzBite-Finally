@@ -1,0 +1,126 @@
+/* Got any questions? text */
+div .contact-info{
+    font-size: 1.2rem;
+    padding-left: 25px;
+}
+
+/* Input comment (textarea) */
+#inputComment{
+    resize: both;
+    max-width: 100%;
+    min-width: 50%;
+    max-height: 150px;
+    min-height: 75px;
+    margin: 0 auto;
+}
+/* Input fields */
+.form-label {
+    display: block;
+}
+/* Contact form when focus */
+.contact-form input:focus{
+    border: 1px solid #ccc;
+}
+/* Comment section */
+.text-input-area:focus {
+    outline: none;
+}
+.text-input-area textarea{
+    font-size: 1.3rem;
+    float: left;
+    padding: 4px 12px;
+    border-radius: 0;
+    border: 1px solid #ccc;
+}
+.text-input-area textarea:focus{
+    outline: none;
+}
+.form_subheading-about {
+    margin-top: 20px !important;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: #684f40;
+    font-weight: 700;
+}
+.subheading-firts{
+    line-height: 35px;
+}
+.contact-des {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #696969;
+    line-height: 25px;
+}
+/* Whole Contact section */
+.contact-section{
+    margin-bottom: 50px;
+}
+.form-control {
+    width: 365px !important;
+}
+
+/* Button */
+.btn-primary{
+    margin-bottom: 20px;
+}
+.input-btn-mes {
+    margin: 30px 0;
+}
+.input-btn-mes input {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+}
+.subsc-input-btn {
+    background-color: var(--fresh-color);
+    color: var(--white-color);
+    border: 2px solid var(--fresh-color);
+    font-size: 1.3rem;
+    font-weight: 200;
+    padding: 10px 0;
+}
+
+.input-btn-mes input:hover {
+    background-color: var(--white-color);
+}
+.input-btn-mes input:hover {
+    color: var(--primary-color);
+}
+
+.input_form-about input:focus:invalid{
+    border-bottom: 2px solid var(--success-color);
+}
+.input_form-about input:focus:valid{
+    border-bottom: 2px solid var(--error-color);
+}
+
+/* Contact info description */
+p.desc{
+    margin-top: 2.5rem;
+    margin-bottom: -16px;
+}
+
+/* Map + info */
+.contact-map{
+    margin-bottom: 20px;
+}
+#font-phone{
+    display: inline;
+    padding-left: 10px;
+}
+#font-marker{
+    display: inline;
+    padding-left: 13px;
+}
+#font-envelope{
+    display: inline;
+    padding-left: 11.5px;
+}
+.font-awesomes i {
+    margin: 7px 0;
+    color: var(--fresh-color);
+}
+.col-md-6{
+    width: 100%;
+}
